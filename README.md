@@ -1,4 +1,4 @@
-# grunt-config [![Build Status](https://secure.travis-ci.org/rhalff/grunt-reload-chrome.png?branch=master)](http://travis-ci.org/rhalff/grunt-reload-chrome)
+# grunt-reload-chrome [![Build Status](https://secure.travis-ci.org/rhalff/grunt-reload-chrome.png?branch=master)](http://travis-ci.org/rhalff/grunt-reload-chrome)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
