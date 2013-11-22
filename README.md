@@ -19,7 +19,7 @@ grunt.loadNpmTasks('grunt-reload-chrome');
 _Run this task with the `grunt reload` command._
 
 Task targets and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
-```
+
 
 ### Usage Examples
 
