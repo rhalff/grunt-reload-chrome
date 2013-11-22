@@ -50,6 +50,14 @@ With `match` you specify the title to match, it can be a regular expression or j
 If you specify an `url`, the location will be set to that exact url. If you
 specify nothing the url will be replaced with itself causing it to reload the page.
 
+
+Resources
+---------
+
+- [Chrome Developer Tools: Remote Debugging Protocol v1.0][1]
+
+[1]: https://developers.google.com/chrome-developer-tools/docs/protocol/1.0/
+
 ## Release History
 ---
 
