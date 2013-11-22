@@ -20,6 +20,12 @@ _Run this task with the `grunt reload` command._
 
 Task targets and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
+This grunt tasks makes use of [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface) package.
+
+So first Chrome needs to be started with the `--remote-debugging-port=<port>` option to
+enable the [Remote Debugging Protocol][1], for example:
+
+    google-chrome --remote-debugging-port=9222
 
 ### Usage Examples
 
