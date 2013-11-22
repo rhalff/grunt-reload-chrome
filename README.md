@@ -20,7 +20,7 @@ _Run this task with the `grunt reload` command._
 
 Task targets and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
-This grunt tasks makes use of [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface) package.
+This grunt tasks makes use of the [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface) package.
 
 So first Chrome needs to be started with the `--remote-debugging-port=<port>` option to
 enable the [Remote Debugging Protocol][1], for example:
@@ -42,14 +42,23 @@ enable the [Remote Debugging Protocol][1], for example:
       match: /Chi/
     }
   },
+  full: {
+    options: {
+      url: 'http://localhost:5000/'
+      host: '192.168.1.23',
+      port: 1024,
+      match: /Chi/
+    }
+  }
 }
 ```
 
 With `match` you specify the title to match, it can be a regular expression or just an exact string. The tab must already be opened within your browser.
 
 If you specify an `url`, the location will be set to that exact url. If you
-specify nothing the url will be replaced with itself causing it to reload the page.
+specify nothing the url will be replaced with itself causing it to reload the current page.
 
+`host` and `port` can be used if your remote debugging port is something else than the default of `9222`.
 
 Resources
 ---------
