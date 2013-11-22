@@ -1,12 +1,9 @@
-//var grunt = require('grunt');
-
-exports['reload-chrome'] = {
+exports['reload'] = {
   main: function(test) {
-
     'use strict';
 
-    test.expect(true);
-
+    test.expect(1);
+    test.ok(true, 'TODO: write a test.');
     test.done();
   }
 };
