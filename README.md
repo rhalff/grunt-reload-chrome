@@ -63,7 +63,7 @@ specify nothing the url will be replaced with itself causing it to reload the cu
 If you feel adventurous you can also use the `scriptEvaluateOnLoad` option, to run a script each time the tab is
 reloaded, which might come in handy to automate stuff even more.
 
-> Note: The detected tab **will not** reload if it has DevTools opened at the moment of reload. 
+> Note: The detected tab **will not** reload if it has DevTools opened at the moment of reload.
 
 Resources
 ---------
@@ -75,4 +75,7 @@ Resources
 ## Release History
 ---
 
+ * 2013-11-23   v0.1.3   expose scriptEvaluateOnLoad & proper tagging.
+ * 2013-11-23   v0.1.2   Forgot.
+ * 2013-11-23   v0.1.1   Forgot.
  * 2013-11-22   v0.1.0   Initial version.

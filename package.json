@@ -30,7 +30,8 @@
     "grunt-contrib-watch": "0.x.x",
     "grunt-contrib-jshint": "0.x.x",
     "grunt-contrib-nodeunit": "0.x.x",
-    "grunt-cli": "0.x.x"
+    "grunt-cli": "0.x.x",
+    "grunt-release": "0.x.x"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"
