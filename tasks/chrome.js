@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
   function chrome(options, done) {
 
-    var current_url, i;
+    var current_url, i, m, title;
 
     var conf = {
       host: options.host,
@@ -22,7 +22,13 @@ module.exports = function(grunt) {
       chooseTab: function (tabs) {
 
         for(i = 0; i < tabs.length; i++) {
-          if(options.match.test(tabs[i].title)) {
+
+          title = tabs[i].title;
+          m = title instanceof RegExp ?
+            options.match.test(title) :
+            options.match === title;
+
+          if(m) {
             current_url = tabs[i].url;
             return i;
           }
@@ -46,10 +52,9 @@ module.exports = function(grunt) {
       chrome.Page.enable();
       chrome.Page.navigate({ 'url': current_url || options.url });
 
-    }).on('error', function () {
+    }).on('error', function (err) {
 
-      grunt.log.error();
-      grunt.fail.warn('Cannot connect to Chrome');
+      grunt.fail.warn(err);
 
       done(false);
 
