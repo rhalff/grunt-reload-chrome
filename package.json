@@ -1,6 +1,6 @@
 {
   "name": "grunt-reload-chrome",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A grunt task to reload chrome tabs.",
   "homepage": "http://github.com/rhalff/grunt-reload-chrome",
   "author": {
