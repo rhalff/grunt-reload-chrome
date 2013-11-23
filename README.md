@@ -42,12 +42,12 @@ enable the [Remote Debugging Protocol][1], for example:
       match: /Chi/
     }
   },
-  full: {
+  eval: {
     options: {
-      url: 'http://localhost:5000/'
       host: '192.168.1.23',
       port: 1024,
-      match: /Chi/
+      match: /Chi/,
+      scriptEvaluateOnLoad: 'alert("hi!")'
     }
   }
 }
@@ -59,6 +59,9 @@ If you specify an `url`, the location will be set to that exact url. If you
 specify nothing the url will be replaced with itself causing it to reload the current page.
 
 `host` and `port` can be used if your remote debugging port is something else than the default of `9222`.
+
+If you feel adventurous you can also use the `scriptEvaluateOnLoad` option, to run a script each time the tab is
+reloaded, which might come in handy to automate stuff even more.
 
 > Note: The detected tab **will not** reload if it has DevTools opened at the moment of reload. 
 
