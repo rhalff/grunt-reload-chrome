@@ -60,6 +60,8 @@ specify nothing the url will be replaced with itself causing it to reload the cu
 
 `host` and `port` can be used if your remote debugging port is something else than the default of `9222`.
 
+> Note: The detected tab **will not** reload if it has DevTools opened at the moment of reload. 
+
 Resources
 ---------
 
