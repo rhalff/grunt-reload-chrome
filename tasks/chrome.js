@@ -50,7 +50,18 @@ module.exports = function(grunt) {
 
       chrome.Network.enable();
       chrome.Page.enable();
-      chrome.Page.navigate({ 'url': current_url || options.url });
+
+      if(options.url) {
+        chrome.Page.navigate({ url: options.url });
+      } else {
+
+        var opts = {};
+        opts.ignoreCache = !!options.ignoreCache;
+        if(options.scriptToEvaluateOnLoad) {
+          opts.scriptToEvaluateOnLoad = options.scriptToEvaluateOnLoad
+        }
+        chrome.Page.reload(opts);
+      }
 
     }).on('error', function (err) {
 
