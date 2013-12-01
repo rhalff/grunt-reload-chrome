@@ -75,6 +75,7 @@ Resources
 ## Release History
 ---
 
+ * 2013-12-01   v0.1.4   Fix RegExp matching
  * 2013-11-23   v0.1.3   expose scriptEvaluateOnLoad & proper tagging.
  * 2013-11-23   v0.1.2   Forgot.
  * 2013-11-23   v0.1.1   Forgot.
