@@ -20,10 +20,10 @@ _Run this task with the `grunt reload` command._
 
 Task targets and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
-This grunt tasks makes use of the [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface) package.
+This grunt tasks makes use of the [chrome-remote-interface][1] package.
 
 So first Chrome needs to be started with the `--remote-debugging-port=<port>` option to
-enable the [Remote Debugging Protocol][1], for example:
+enable the [Remote Debugging Protocol][2], for example:
 
     google-chrome --remote-debugging-port=9222
 
@@ -59,17 +59,18 @@ If you specify an `url` the location will be set to that exact url, specify noth
 
 `host` and `port` can be used if your remote debugging port is something else than the default of `9222`.
 
-If you feel adventurous you can also use the `scriptEvaluateOnLoad` option, to run a script each time the tab is
-reloaded, which might come in handy to automate stuff even more.
+If you feel adventurous you can also use the `scriptEvaluateOnLoad` option to run a script each time the tab is reloaded, which might come in handy to automate stuff even more.
 
 > Note: The detected tab **will not** reload if it has DevTools opened at the moment of reload.
 
 Resources
 ---------
 
-- [Chrome Developer Tools: Remote Debugging Protocol v1.0][1]
+- [Chrome Remote Interface][1]
+- [Chrome Developer Tools: Remote Debugging Protocol v1.0][2]
 
-[1]: https://developers.google.com/chrome-developer-tools/docs/protocol/1.0/
+[1]: https://github.com/cyrus-and/chrome-remote-interface
+[2]: https://developers.google.com/chrome-developer-tools/docs/protocol/1.0/
 
 ## Release History
 ---
