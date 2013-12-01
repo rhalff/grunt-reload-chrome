@@ -55,8 +55,9 @@ enable the [Remote Debugging Protocol][1], for example:
 
 With `match` you specify the title to match, it can be a regular expression or just an exact string. The tab must already be opened within your browser.
 
-If you specify an `url`, the location will be set to that exact url. If you
-specify nothing the url will be replaced with itself causing it to reload the current page.
+If you specify an `url` the location will be set to that exact url.
+
+If you specify nothing the current page will be reloaded.
 
 `host` and `port` can be used if your remote debugging port is something else than the default of `9222`.
 
