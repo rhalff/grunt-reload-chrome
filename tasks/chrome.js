@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         for(i = 0; i < tabs.length; i++) {
 
           title = tabs[i].title;
-          m = title instanceof RegExp ?
+          m = options.match instanceof RegExp ?
             options.match.test(title) :
             options.match === title;
 
