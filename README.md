@@ -80,3 +80,7 @@ Resources
  * 2013-11-23   v0.1.2   Forgot.
  * 2013-11-23   v0.1.1   Forgot.
  * 2013-11-22   v0.1.0   Initial version.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rhalff/grunt-reload-chrome/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
